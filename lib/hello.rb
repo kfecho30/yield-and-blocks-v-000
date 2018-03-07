@@ -2,14 +2,10 @@ def hello_t(array)
   i = 0
 
   while i < array.length
-    yield(array[i])
+    yield(array.length == 0? "Hey! No block was given!":array[i])
     i = i + 1
   end
-  if array.length == 0
-    "Hey! No block was given!"
-  else
     array
-  end
 end
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
