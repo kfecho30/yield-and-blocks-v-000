@@ -7,7 +7,9 @@ def hello_t(array)
   end
   if array.length == 0
     "Hey! No block was given!"
-  array
+  else
+    array
+  end
 end
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
